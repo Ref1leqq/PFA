@@ -29,14 +29,9 @@ def create_db_and_tables():
 def register():
     login = login_entry.get()
     password = password_entry.get()
-    confirm_password = confirm_password_entry.get()
 
-    if not login or not password or not confirm_password:
+    if not login or not password:
         messagebox.showerror("Ошибка", "Заполните все поля!")
-        return
-
-    if password != confirm_password:
-        messagebox.showerror("Ошибка", "Пароли не совпадают!")
         return
 
     conn = sqlite3.connect('users.db')
