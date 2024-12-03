@@ -153,7 +153,7 @@ class FinanceAssistantApp(tk.Tk):
 
     def setup_home_page(self):
         tk.Label(self.home_page, text="Общая информация", font=("Arial", 16)).pack(pady=10)
-        tk.Label(self.home_page, text="Здесь отображаются баланс и графики.", font=("Arial", 12)).pack()
+        tk.Label(self.home_page, text="Здесь будут отображаться баланс и диаграммы.", font=("Arial", 12)).pack()
 
         # Кнопки для внесения новых данных
         tk.Button(self.home_page, text="Добавить транзакцию", command=self.add_transaction_window).pack(pady=10)
