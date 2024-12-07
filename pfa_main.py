@@ -508,3 +508,4 @@ register_button = tk.Button(window, text="Регистрация", command=regis
 register_button.place(x=375,y=320)
 
 window.mainloop()
+#1
